@@ -66,7 +66,7 @@ nav ul {
 
 header a {
     text-decoration: none;
-    padding: 18px 48px;
+    padding: 15px 40px;
     font-family: "Figtree", sans-serif;
     font-size: 20px;
     font-weight: bold;
@@ -94,17 +94,17 @@ header a {
     filter: brightness(0) invert(1);
 }
 
-a img {
+header a img {
     width: 40px;
 }
 
-a:hover {
+header a:hover {
     background-color: #078a3e;
     transform: scale(1.05);
     transition: 0.2s;
 }
 
-a:focus {
+header a:focus {
     background-color: #078a3e;
     transform: scale(1.05);
     transition: 0.2s;

@@ -20,32 +20,38 @@
                 <li><a href="home.html">Home</a></li>
                 <li><a href="cardapio.html">Cardápio</a></li>
                 <li><a id="cart" href="carrinho.html"><img src=../images/carrinho.png></a></li>
-                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="login.html">Login</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section class="container">
-            <form action="endereco.html">
-                <h3>Login</h3>
+            <form action="home.html">
+                <h3>Endereço</h3>
 
-                <div class="logar">
-                    <label for="email">E-mail</label>
-                    <input id="email" type="email" placeholder="exemplo@email.com" required>
-                    <a href="email.html">Esqueci meu e-mail</a>
+                <label for="cep">CEP</label>
+                <input id="cep" type="text" maxlength="8" placeholder="00000-000" required>
 
-                    <label for="senha">Senha</label>
-                    <input id="senha" type="password" minlength="8" placeholder="•••••••••" required>
-                    <a href="senha.html">Esqueci minha senha</a>
+                <label for="rua">Rua</label>
+                <input id="rua" type="text" placeholder="Rua, Avenida..." readonly>
+
+                <div class="duplo">
+                    <div class="grupo">
+                        <label for="numero">N°</label>
+                        <input id="numero" type="text" maxlength="5" placeholder="1234" required>
+                    </div>
+
+                    <div class="grupo">
+                        <label for="complemento">Complemento</label>
+                        <input id="complemento" type="text" placeholder="Bloco, Apto...">
+                    </div>
                 </div>
 
-                <div id="div-manter">
-                    <input type="checkbox" id="manter" name="manter">
-                    <label for="manter">Manter-me conectado</label>
-                </div>
+                <label for="bairro">Bairro</label>
+                <input id="bairro" type="text" placeholder="Bairro" readonly>
 
-                <input value="Entrar" type="submit">
+                <input value="Cadastrar" type="submit">
             </form>
         </section>
     </main>
